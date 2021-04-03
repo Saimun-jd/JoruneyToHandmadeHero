@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "cl.exe - Build and debug active file",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${config:buildDir}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${env:buildDir}",
+            "environment": [],
+            "externalConsole": false,
+            "preLaunchTask": "C/C++: cl.exe build active file"
+        }
+    ]
+}

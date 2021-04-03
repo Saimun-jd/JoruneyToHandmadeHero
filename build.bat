@@ -2,5 +2,5 @@
 mkdir ..\..\build
 pushd ..\..\build
 cd
-cl -Zi w:\handmade\code\win32_handmade.cpp user32.lib gdi32.lib
+cl -Zi W:\handmade\JoruneyToHandmadeHero\code\win32_handmade.cpp user32.lib gdi32.lib
 popd

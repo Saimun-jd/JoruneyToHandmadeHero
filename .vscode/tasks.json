@@ -2,23 +2,8 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Build C++ project",
             "type": "shell",
-            "label": "C/C++: cl.exe build active file",
-            "command": "cl",
-            "args": [
-                "/Zi",
-                "/EHsc",
-                "/Fe:",
-                "${config:buildDir}\\${fileBasenameNoExtension}.exe",
-                "/Fo${config:buildDir}\\",
-                "/Fd${config:buildDir}\\",
-                "${file}"  ,
-                "user32.lib",
-                "gdi32.lib"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
             "problemMatcher": [
                 "$msCompile"
             ],
@@ -26,9 +11,19 @@
                 "kind": "build",
                 "isDefault": true
             },
+            "command": ".\\build.bat",
             "dependsOn": [
                 "Set dependencies for build"
             ]
+        },
+        {
+            "label": "Build and run C++ project",
+            "type": "shell",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "command": ".\\build.bat && .\\bin\\win32_handmade.exe"
         }
     ]
 }

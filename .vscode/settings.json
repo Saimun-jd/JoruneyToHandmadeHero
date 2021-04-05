@@ -1,5 +1,8 @@
 {
-    "buildDir": "W:\\build",
+    "files.associations": {
+        "*.tpp": "cpp"
+    },
+    "terminal.integrated.shell.windows": "cmd.exe",
     "workbench.colorCustomizations": {
         "activityBar.background": "#00371b",
         "titleBar.activeBackground": "#000402",

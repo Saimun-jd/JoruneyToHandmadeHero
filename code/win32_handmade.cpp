@@ -3,8 +3,8 @@
 
 typedef int8_t i8;
 typedef int16_t i16;
-typedef int32_t i32;
 typedef int64_t i64;
+typedef int32_t i32;
 
 typedef uint8_t u8;
 typedef uint16_t u16;
@@ -15,7 +15,7 @@ typedef uint64_t u64;
 #define interval static
 
 struct win32_offscreen_buffer {
-  void *Memory;
+    void *Memory;
     BITMAPINFO Info;
     int BytesPerPixel;
     int Width;
@@ -81,8 +81,8 @@ int CALLBACK WinMain(
             MSG Message = {};
 
             while(PeekMessage(&Message, 0, 0, 0, PM_REMOVE)) {
-            TranslateMessage(&Message);
-            DispatchMessage(&Message);
+                TranslateMessage(&Message);
+                DispatchMessage(&Message);
             }
 
             RenderWeirdGradeint(&GlobalBackBuffer, XOffset, YOffset);

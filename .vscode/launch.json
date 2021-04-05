@@ -2,16 +2,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "cl.exe - Build and debug active file",
+            "name": "C++ Debug (Windows)",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${config:buildDir}\\${fileBasenameNoExtension}.exe",
+            "program": "${workspaceFolder}/bin/win32_handmade.exe",
+            "preLaunchTask": "Build C++ project",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${env:buildDir}",
+            "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": false,
-            "preLaunchTask": "C/C++: cl.exe build active file"
+            "externalConsole": true,
         }
     ]
 }

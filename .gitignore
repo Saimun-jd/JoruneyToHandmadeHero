@@ -31,5 +31,7 @@
 *.out
 *.app
 
-# vscode shits
-.vscode/*
+# non essential folders
+/misc
+/data
+/bin
